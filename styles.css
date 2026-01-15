@@ -1,0 +1,123 @@
+:root {
+  --bg: #0b0f14;
+  --card: #121824;
+  --text: #e7edf6;
+  --muted: #a8b3c7;
+  --border: #22304a;
+}
+
+/* Reset / Base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.logo {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.links a {
+  color: var(--muted);
+  text-decoration: none;
+  margin-left: 14px;
+}
+
+.links a.active,
+.links a:hover {
+  color: var(--text);
+}
+
+/* Typography */
+.page-title {
+  margin: 0 0 6px;
+  font-size: 34px;
+}
+
+.sub {
+  color: var(--muted);
+  margin: 0 0 18px;
+}
+
+h2 {
+  margin-top: 24px;
+  margin-bottom: 10px;
+}
+
+/* Cards */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 22px;
+}
+
+/* About page layout */
+.about-grid {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.profile-photo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.about-content {
+  display: block;
+}
+
+.about-intro {
+  margin-top: 0;
+}
+
+/* Links & footer */
+.text-link {
+  color: var(--text);
+  text-decoration: underline;
+}
+
+.footer {
+  color: var(--muted);
+  padding-top: 14px;
+  padding-bottom: 30px;
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-photo {
+    max-width: 220px;
+  }
+}

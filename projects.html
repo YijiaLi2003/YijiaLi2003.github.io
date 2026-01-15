@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects | Yijia Li</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="container">
+      <nav class="nav">
+        <a class="logo" href="/">Yijia Li</a>
+        <div class="links">
+          <a class="active" href="/projects.html">Projects</a>
+          <a href="/about.html">About</a>
+          <a href="/assets/Yijia_Li_Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+        </div>
+      </nav>
+
+      <h1 class="page-title">Projects</h1>
+      <p class="sub">
+        Selected work focused on gameplay systems, level gameplay, and rapid iteration in Unreal Engine.
+      </p>
+    </header>
+
+    <main class="container grid">
+      <article class="card">
+        <h2>Escape Facility</h2>
+        <p>Unreal Engine stealth-puzzle prototype. Focus: interaction system + AI state logic + level gameplay.</p>
+        <ul>
+          <li>Unreal Engine 5, C++, Blueprints</li>
+          <li>Component-based interaction system</li>
+          <li>Event-driven gameplay flow (reduced tick/polling)</li>
+        </ul>
+        <div class="row">
+          <!-- Replace # with your project page later if you make one -->
+          <a class="btn" href="#">Project page (coming soon)</a>
+          <!-- Replace # with a YouTube/Vimeo link later -->
+          <a class="btn secondary" href="#" target="_blank" rel="noreferrer">Video (coming soon)</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Owl Hunt</h2>
+        <p>Playdate mini-game focused on responsive controls, timing, and moment-to-moment feedback.</p>
+        <ul>
+          <li>Lua, Playdate SDK</li>
+          <li>Iteration on game feel and player feedback</li>
+        </ul>
+        <div class="row">
+          <a class="btn" href="#">Project page (coming soon)</a>
+          <a class="btn secondary" href="#" target="_blank" rel="noreferrer">Video (coming soon)</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Gravity (WIP)</h2>
+        <p>Long-term UE project exploring gravity manipulation mechanics. Early development.</p>
+        <ul>
+          <li>Unreal Engine 5</li>
+          <li>Systems prototyping</li>
+        </ul>
+      </article>
+    </main>
+
+    <footer class="container footer">
+      <p>© <span id="y"></span> Yijia Li</p>
+    </footer>
+
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

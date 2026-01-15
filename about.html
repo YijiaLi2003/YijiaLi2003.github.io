@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About | Yijia Li</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="container">
+      <nav class="nav">
+        <a class="logo" href="/">Yijia Li</a>
+        <div class="links">
+          <a href="/projects.html">Projects</a>
+          <a class="active" href="/about.html">About</a>
+          <a href="/assets/Yijia_Li_Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+        </div>
+      </nav>
+
+      <h1 class="page-title">About</h1>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <div class="about-grid">
+          <img
+            src="/assets/images/Me.JPG"
+            alt="Me"
+            class="profile-photo"
+          />
+
+          <div class="about-content">
+            <p class="about-intro">
+              I’m a gameplay designer / developer focused on building systems and level gameplay in Unreal Engine.
+              I enjoy rapid prototyping, iterating on player experience, and implementing mechanics in C++ and Blueprints.
+            </p>
+
+            <h2>Focus</h2>
+            <ul>
+              <li>Gameplay systems &amp; mechanics implementation (C++ / Blueprints)</li>
+              <li>Level gameplay: pacing, player guidance, interaction design</li>
+              <li>Prototyping and iteration driven by playtesting feedback</li>
+            </ul>
+
+            <h2>Contact</h2>
+            <p>
+              Email:
+              <a class="text-link" href="mailto:yijiali2003@gmail.com">
+                yijiali2003@gmail.com
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container footer">
+      <p>© <span id="y"></span> Yijia Li</p>
+    </footer>
+
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
