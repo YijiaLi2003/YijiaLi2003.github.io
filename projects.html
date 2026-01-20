@@ -1,179 +1,177 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Projects | Yijia Li</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
 
-  <body>
-    <header class="container">
-      <nav class="nav">
-        <a class="logo" href="/">Yijia Li</a>
-        <div class="links">
-          <a class="active" href="/projects.html">Projects</a>
-          <a href="/about.html">About</a>
-          <a href="/assets/Resume_Yijia.pdf" target="_blank" rel="noreferrer">Resume</a>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects | Yijia Li</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="container">
+    <nav class="nav">
+      <a class="logo" href="/">Yijia Li</a>
+      <div class="links">
+        <a class="active" href="/projects.html">Projects</a>
+        <a href="/about.html">About</a>
+        <a href="/assets/Resume_Yijia.pdf" target="_blank" rel="noreferrer">Resume</a>
+      </div>
+    </nav>
+
+    <h1 class="page-title">Projects</h1>
+    </p>
+  </header>
+
+  <main class="container">
+    <!-- ===================== -->
+    <!-- Sneaking Out -->
+    <!-- ===================== -->
+    <section class="card project">
+      <div class="project-head">
+        <div>
+          <h2 class="project-title">Sneaking Out</h2>
+          <p class="project-sub">
+            UE5 stealth student project featuring responsive locomotion and a throw-to-distract mechanic.
+          </p>
         </div>
-      </nav>
 
-      <h1 class="page-title">Projects</h1>
+        <div class="project-meta">
+          <span class="pill">Unreal Engine 5.6</span>
+          <span class="pill">Blueprint</span>
+          <span class="pill">Enhanced Input</span>
+        </div>
+      </div>
+
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/jiOzP3fpSqY" title="Sneaking Out Playthrough" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <h3>Role</h3>
+      <p>
+        Gameplay Designer / Developer — player locomotion (sprint/crouch/jump), throw mechanic, and Blueprint gameplay
+        logic.
       </p>
-    </header>
 
-    <main class="container">
-      <!-- ===================== -->
-      <!-- Sneaking Out -->
-      <!-- ===================== -->
-      <section class="card project">
-        <div class="project-head">
-          <div>
-            <h2 class="project-title">Sneaking Out</h2>
-            <p class="project-sub">
-              UE5 stealth student project featuring responsive locomotion and a throw-to-distract mechanic.
-            </p>
-          </div>
+      <h3>What I Built</h3>
+      <ul>
+        <li>Implemented sprint, crouch, and jump using Enhanced Input with state gating for stealth pacing</li>
+        <li>Added safety checks to prevent conflicting movement states and edge-case bugs</li>
+        <li>Built throw-to-distract: montage-driven throw, spawn throwable, physics impulse, and inventory decrement
+        </li>
+        <li>Integrated player feedback and control rules to keep interactions responsive and readable</li>
+      </ul>
 
-          <div class="project-meta">
-            <span class="pill">Unreal Engine 5.6</span>
-            <span class="pill">Blueprint</span>
-            <span class="pill">Enhanced Input</span>
-          </div>
+      <div class="media-grid">
+        <figure class="blueprint-figure">
+          <img src="/assets/images/movement.png" alt="Locomotion Blueprint (sprint and jump)" />
+          <figcaption>Locomotion Blueprint: sprint + jump input logic with movement-state checks.</figcaption>
+        </figure>
+
+        <figure class="blueprint-figure">
+          <img src="/assets/images/crounch.png" alt="Crouch Blueprint" />
+          <figcaption>Crouch Blueprint: gated transitions and safety checks for stable stealth movement.</figcaption>
+        </figure>
+
+        <figure class="blueprint-figure">
+          <img src="/assets/images/throwitem.png" alt="Throw mechanic Blueprint (spawn + impulse + inventory update)" />
+          <figcaption>Throw mechanic Blueprint: spawn + physics impulse + inventory update for distraction gameplay.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== -->
+    <!-- Owl Hunt -->
+    <!-- ===================== -->
+    <section class="card project">
+      <div class="project-head">
+        <div>
+          <h2 class="project-title">Owl Hunt</h2>
+          <p class="project-sub">
+            Playdate game where the crank controls aiming, diving, and returning with prey.
+          </p>
         </div>
 
-        <div class="video-wrapper">
-          <iframe
-            src="https://www.youtube.com/embed/jiOzP3fpSqY"
-            title="Sneaking Out Playthrough"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
-          </iframe>
+        <div class="project-meta">
+          <span class="pill">Playdate</span>
+          <span class="pill">Lua</span>
+          <span class="pill">Game Feel</span>
+        </div>
+      </div>
+
+      <div class="gif-wrapper">
+        <img src="/assets/images/Owlhunt.gif" alt="Owl Hunt gameplay gif" />
+      </div>
+
+      <h3>Role</h3>
+      <p>Solo developer — gameplay design, tuning, and Lua implementation.</p>
+
+      <h3>Design Goal (True North)</h3>
+      <p class="muted">
+        Deliver a tense, atmospheric hunting experience where the crank embodies the owl’s struggle for survival —
+        aiming, diving, and returning with prey all reinforce effort, weight, and urgency.
+      </p>
+
+      <h3>What I Built</h3>
+      <ul>
+        <li>Crank-driven aiming arc and commit-to-dive control loop designed for short, intense sessions</li>
+        <li>Return phase that requires cranking backward to “fight” prey weight and reach safety</li>
+        <li>Multiple prey behaviors (rats vs rabbits) to vary difficulty and decision-making</li>
+        <li>Invisible dynamic difficulty (prey speed, night length, hearts) to keep tension high without menus</li>
+        <li>Minimal UI + hint system that teaches through feedback rather than text tutorials</li>
+      </ul>
+
+      <div class="row">
+        <a class="btn" href="https://github.com/YijiaLi2003/OwlHunt" target="_blank" rel="noreferrer">
+          View Source on GitHub
+        </a>
+      </div>
+
+    </section>
+
+
+    <!-- ===================== -->
+    <!-- Gravity (WIP) -->
+    <!-- ===================== -->
+    <section class="card project">
+      <div class="project-head">
+        <div>
+          <h2 class="project-title">Gravity (WIP)</h2>
+          <p class="project-sub">
+            Long-term Unreal project exploring gravity-manipulation puzzle mechanics. Early development.
+          </p>
         </div>
 
-        <h3>Role</h3>
-        <p>
-          Gameplay Designer / Developer — player locomotion (sprint/crouch/jump), throw mechanic, and Blueprint gameplay logic.
-        </p>
-
-        <h3>What I Built</h3>
-        <ul>
-          <li>Implemented sprint, crouch, and jump using Enhanced Input with state gating for stealth pacing</li>
-          <li>Added safety checks to prevent conflicting movement states and edge-case bugs</li>
-          <li>Built throw-to-distract: montage-driven throw, spawn throwable, physics impulse, and inventory decrement</li>
-          <li>Integrated player feedback and control rules to keep interactions responsive and readable</li>
-        </ul>
-
-        <div class="media-grid">
-          <figure class="blueprint-figure">
-            <img
-              src="/assets/images/movement.png"
-              alt="Locomotion Blueprint (sprint and jump)"
-            />
-            <figcaption>Locomotion Blueprint: sprint + jump input logic with movement-state checks.</figcaption>
-          </figure>
-
-          <figure class="blueprint-figure">
-            <img
-              src="/assets/images/crounch.png"
-              alt="Crouch Blueprint"
-            />
-            <figcaption>Crouch Blueprint: gated transitions and safety checks for stable stealth movement.</figcaption>
-          </figure>
-
-          <figure class="blueprint-figure">
-            <img
-              src="/assets/images/throwitem.png"
-              alt="Throw mechanic Blueprint (spawn + impulse + inventory update)"
-            />
-            <figcaption>Throw mechanic Blueprint: spawn + physics impulse + inventory update for distraction gameplay.</figcaption>
-          </figure>
+        <div class="project-meta">
+          <span class="pill">Unreal Engine</span>
+          <span class="pill">Studio Project</span>
+          <span class="pill">Pitch</span>
         </div>
-      </section>
+      </div>
 
-      <!-- ===================== -->
-      <!-- Owl Hunt -->
-      <!-- ===================== -->
-      <section class="card project">
-        <div class="project-head">
-          <div>
-            <h2 class="project-title">Owl Hunt</h2>
-            <p class="project-sub">
-              Playdate game where the crank controls aiming, diving, and returning with prey.
-            </p>
-          </div>
+      <p class="muted">
+        This is in early production, so the most representative artifact right now is our team pitch.
+      </p>
 
-          <div class="project-meta">
-            <span class="pill">Playdate</span>
-            <span class="pill">Lua</span>
-            <span class="pill">Game Feel</span>
-          </div>
-        </div>
+      <div class="row">
+        <a class="btn" href="https://youtu.be/v3qzcnEXEbE" target="_blank" rel="noreferrer">
+          Watch Pitch (5 min)
+        </a>
+      </div>
+    </section>
+  </main>
 
-        <div class="gif-wrapper">
-          <img
-            src="/assets/images/Owlhunt.gif"
-            alt="Owl Hunt gameplay gif"
-          />
-        </div>
+  <footer class="container footer">
+    <p>© <span id="y"></span> Yijia Li</p>
+  </footer>
 
-        <h3>Role</h3>
-        <p>Solo developer — gameplay design, tuning, and Lua implementation.</p>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
 
-        <h3>Design Goal (True North)</h3>
-        <p class="muted">
-          Deliver a tense, atmospheric hunting experience where the crank embodies the owl’s struggle for survival —
-          aiming, diving, and returning with prey all reinforce effort, weight, and urgency.
-        </p>
-
-        <h3>What I Built</h3>
-        <ul>
-          <li>Crank-driven aiming arc and commit-to-dive control loop designed for short, intense sessions</li>
-          <li>Return phase that requires cranking backward to “fight” prey weight and reach safety</li>
-          <li>Multiple prey behaviors (rats vs rabbits) to vary difficulty and decision-making</li>
-          <li>Invisible dynamic difficulty (prey speed, night length, hearts) to keep tension high without menus</li>
-          <li>Minimal UI + hint system that teaches through feedback rather than text tutorials</li>
-        </ul>
-      </section>
-
-      <!-- ===================== -->
-      <!-- Gravity (WIP) -->
-      <!-- ===================== -->
-      <section class="card project">
-        <div class="project-head">
-          <div>
-            <h2 class="project-title">Gravity (WIP)</h2>
-            <p class="project-sub">
-              Long-term Unreal project exploring gravity-manipulation puzzle mechanics. Early development.
-            </p>
-          </div>
-
-          <div class="project-meta">
-            <span class="pill">Unreal Engine</span>
-            <span class="pill">Studio Project</span>
-            <span class="pill">Pitch</span>
-          </div>
-        </div>
-
-        <p class="muted">
-          This is in early production, so the most representative artifact right now is our team pitch.
-        </p>
-
-        <div class="row">
-          <a class="btn" href="https://youtu.be/v3qzcnEXEbE" target="_blank" rel="noreferrer">
-            Watch Pitch (5 min)
-          </a>
-        </div>
-      </section>
-    </main>
-
-    <footer class="container footer">
-      <p>© <span id="y"></span> Yijia Li</p>
-    </footer>
-
-    <script>
-      document.getElementById("y").textContent = new Date().getFullYear();
-    </script>
-  </body>
 </html>
