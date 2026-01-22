@@ -132,6 +132,46 @@
       </div>
 
     </section>
+    <!-- ===================== -->
+    <!-- Relic Runner -->
+    <!-- ===================== -->
+    <section class="card project">
+      <div class="project-head">
+        <div>
+          <h2 class="project-title">Relic Runner</h2>
+          <p class="project-sub">
+            C++17 command-line game: ASCII dungeon exploration with turn-based combat, inventory, collectibles,
+            and full save/load.
+          </p>
+        </div>
+
+        <div class="project-meta">
+          <span class="pill">C++17</span>
+          <span class="pill">Command Line</span>
+          <span class="pill">Data Save/Load</span>
+        </div>
+      </div>
+
+      <h3>Role</h3>
+      <p>Solo developer — systems design, C++ implementation, save/load, inventory, combat, and unit tests.</p>
+
+      <h3>What I Built</h3>
+      <ul>
+        <li>ASCII dungeon renderer with player, monsters, exit, and ground collectibles</li>
+        <li>Turn-based movement + combat loop (player action → monster turns with simple AI)</li>
+        <li>Inventory built on a custom templated <code>LinkedList&lt;Item&gt;</code> (add/remove/use items)</li>
+        <li>Collectible + drop system: items spawn on the map and monsters drop loot on defeat</li>
+        <li>Full save/load to <code>data/savegame.txt</code> including player, monsters, inventory, and ground items
+        </li>
+        <li>Unit tests runnable via <code>make test</code> and <code>test.sh</code></li>
+      </ul>
+
+      <div class="row">
+        <a class="btn" href="https://github.com/YijiaLi2003/RelicRunner" target="_blank" rel="noreferrer">
+          View Source on GitHub
+        </a>
+      </div>
+    </section>
 
 
     <!-- ===================== -->
