@@ -1,52 +1,142 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Yijia (Jya) Li | Gameplay Designer / Developer</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yijia (Jya) Li — Gameplay Designer / Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
-  <body>
-    <header class="container">
-      <nav class="nav">
-        <a class="logo" href="/">Yijia Li</a>
-        <div class="links">
-          <a href="/projects.html">Projects</a>
-          <a href="/about.html">About</a>
-          <a href="/assets/Resume_Yijia.pdf" target="_blank" rel="noreferrer">Resume</a>
-        </div>
-      </nav>
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="/" class="nav-logo">Yijia Li</a>
+    <div class="nav-links">
+      <a href="/projects.html">Projects</a>
+      <a href="/about.html">About</a>
+      <a href="/assets/Resume_Yijia.pdf" target="_blank" rel="noreferrer" class="nav-resume">Resume ↗</a>
+    </div>
+  </nav>
 
-      <section class="hero">
-        <h1>Gameplay Designer / Developer</h1>
-        <p class="sub">Unreal Engine • C++ • Systems &amp; Level Gameplay</p>
-
-        <div class="cta">
-          <a class="btn" href="/projects.html">View Projects</a>
-          <a class="btn secondary" href="https://github.com/YijiaLi2003" target="_blank" rel="noreferrer">GitHub</a>
-          <a class="btn secondary" href="https://www.linkedin.com/in/yijiali2003" target="_blank" rel="noreferrer">LinkedIn</a>
-        </div>
-      </section>
-    </header>
-
-    <main class="container">
-      <section class="card">
-        <h2>Featured Project</h2>
-        <h3>Escape Facility</h3>
-        <p>
-          Stealth-puzzle prototype focused on modular interaction systems and level gameplay iteration in Unreal Engine.
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="label hero-label">Gameplay Designer &amp; Developer</p>
+        <h1 class="hero-name">
+          Yijia<br>(Jya) Li<span class="accent">.</span>
+        </h1>
+        <p class="hero-sub">
+          Building gameplay systems and level experiences in Unreal Engine.
+          UE5 &nbsp;·&nbsp; C++ &nbsp;·&nbsp; Blueprint &nbsp;·&nbsp; Lua
         </p>
-        <a href="/projects.html" class="text-link">See projects →</a>
-      </section>
-    </main>
+        <div class="hero-cta">
+          <a href="/projects.html" class="btn btn-primary">View Work →</a>
+          <a href="https://github.com/YijiaLi2003" target="_blank" rel="noreferrer" class="btn">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/yijiali2003" target="_blank" rel="noreferrer" class="btn">LinkedIn ↗</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="/assets/images/Owlhunt.gif" alt="Owl Hunt — gameplay preview" />
+      </div>
+    </div>
+  </section>
 
-    <footer class="container footer">
-      <p>© <span id="y"></span> Yijia Li</p>
-    </footer>
+  <!-- SELECTED WORK -->
+  <section class="work-section">
+    <div class="wrap">
+      <div class="work-header reveal">
+        <span class="section-title">Selected Work</span>
+        <span class="work-count">04 projects</span>
+      </div>
 
-    <script>
-      document.getElementById("y").textContent = new Date().getFullYear();
-    </script>
-  </body>
+      <div class="work-grid">
+
+        <!-- Sneaking Out -->
+        <a href="/projects.html#sneaking-out" class="work-card reveal">
+          <span class="work-card-arrow">↗</span>
+          <div class="work-card-thumb">
+            <img src="/assets/images/movement.png" alt="Sneaking Out — Blueprint screenshot" />
+          </div>
+          <div class="work-card-tags">
+            <span class="tag">UE5</span>
+            <span class="tag">Blueprint</span>
+            <span class="tag">Stealth</span>
+          </div>
+          <p class="work-card-title">Sneaking Out</p>
+          <p class="work-card-desc">Stealth prototype with locomotion system and throw-to-distract mechanic.</p>
+        </a>
+
+        <!-- Owl Hunt -->
+        <a href="/projects.html#owl-hunt" class="work-card reveal reveal-d1">
+          <span class="work-card-arrow">↗</span>
+          <div class="work-card-thumb">
+            <img src="/assets/images/Owlhunt.gif" alt="Owl Hunt — gameplay" />
+          </div>
+          <div class="work-card-tags">
+            <span class="tag">Playdate</span>
+            <span class="tag">Lua</span>
+            <span class="tag">Solo</span>
+          </div>
+          <p class="work-card-title">Owl Hunt</p>
+          <p class="work-card-desc">Crank-controlled platform game for the Playdate handheld console.</p>
+        </a>
+
+        <!-- Relic Runner -->
+        <a href="/projects.html#relic-runner" class="work-card reveal reveal-d2">
+          <span class="work-card-arrow">↗</span>
+          <div class="work-card-thumb empty">
+            <span>C++17</span>
+          </div>
+          <div class="work-card-tags">
+            <span class="tag">C++17</span>
+            <span class="tag">CLI</span>
+            <span class="tag">Solo</span>
+          </div>
+          <p class="work-card-title">Relic Runner</p>
+          <p class="work-card-desc">Command-line dungeon crawler with ASCII rendering, combat, and save/load.</p>
+        </a>
+
+        <!-- Gravity -->
+        <a href="/projects.html#gravity" class="work-card reveal reveal-d3">
+          <span class="work-card-arrow">↗</span>
+          <div class="work-card-thumb empty">
+            <span>WIP</span>
+          </div>
+          <div class="work-card-tags">
+            <span class="tag">UE5</span>
+            <span class="tag">Team</span>
+            <span class="tag">WIP</span>
+          </div>
+          <p class="work-card-title">Gravity</p>
+          <p class="work-card-desc">Long-form studio project — gravity manipulation puzzle mechanics. Early stage.</p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <span>© <span id="y"></span> Yijia Li</span>
+      <div class="footer-links">
+        <a href="mailto:yijiali2003@gmail.com">Email</a>
+        <a href="https://github.com/YijiaLi2003" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/yijiali2003" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    const observer = new IntersectionObserver(
+      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+      { threshold: 0.07 }
+    );
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
 </html>
