@@ -1,217 +1,240 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Projects | Yijia Li</title>
+  <title>Projects — Yijia Li</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-  <header class="container">
-    <nav class="nav">
-      <a class="logo" href="/">Yijia Li</a>
-      <div class="links">
-        <a class="active" href="/projects.html">Projects</a>
-        <a href="/about.html">About</a>
-        <a href="/assets/Resume_Yijia.pdf" target="_blank" rel="noreferrer">Resume</a>
-      </div>
-    </nav>
 
-    <h1 class="page-title">Projects</h1>
-    </p>
-  </header>
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="/" class="nav-logo">Yijia Li</a>
+    <div class="nav-links">
+      <a href="/projects.html" class="active">Projects</a>
+      <a href="/about.html">About</a>
+      <a href="/assets/Resume_Yijia.pdf" target="_blank" rel="noreferrer" class="nav-resume">Resume ↗</a>
+    </div>
+  </nav>
 
-  <main class="container">
-    <!-- ===================== -->
-    <!-- Sneaking Out -->
-    <!-- ===================== -->
-    <section class="card project">
-      <div class="project-head">
-        <div>
-          <h2 class="project-title">Sneaking Out</h2>
-          <p class="project-sub">
-            UE5 stealth student project featuring responsive locomotion and a throw-to-distract mechanic.
-          </p>
+  <!-- PAGE HEADER -->
+  <div class="wrap">
+    <header class="projects-top">
+      <p class="label">Work</p>
+      <h1 class="page-heading">Projects<span class="accent">.</span></h1>
+    </header>
+  </div>
+
+  <!-- PROJECT LIST -->
+  <div class="wrap">
+    <div class="project-list">
+
+      <!-- ─────────────────────────────────────────────── -->
+      <!-- 01 · Sneaking Out                              -->
+      <!-- ─────────────────────────────────────────────── -->
+      <article class="project-item reveal" id="sneaking-out">
+        <p class="project-num label">01</p>
+        <div class="project-top-row">
+          <div>
+            <h2 class="project-title">Sneaking Out</h2>
+            <p class="project-role">Gameplay Designer / Developer &mdash; UE5 Student Project</p>
+          </div>
+          <div class="project-tags">
+            <span class="tag">Unreal Engine 5</span>
+            <span class="tag">Blueprint</span>
+            <span class="tag">Perforce</span>
+          </div>
         </div>
 
-        <div class="project-meta">
-          <span class="pill">Unreal Engine 5.6</span>
-          <span class="pill">Blueprint</span>
-          <span class="pill">Perforce</span>
+        <div class="project-body">
+          <!-- Left: description -->
+          <div>
+            <p class="project-desc">
+              A stealth prototype built in Unreal Engine 5 as part of a university team project.
+              I designed and implemented the player's locomotion system and the core throw-to-distract mechanic.
+            </p>
+            <div class="project-feats">
+              <span class="feat">Responsive locomotion: sprint, crouch, and jump via Enhanced Input with state gating</span>
+              <span class="feat">Safety checks to prevent conflicting movement states and edge-case bugs</span>
+              <span class="feat">Throw-to-distract: montage-driven throw, spawned throwable, physics impulse, inventory decrement</span>
+              <span class="feat">Player feedback and control rules to keep interactions readable</span>
+            </div>
+            <div class="project-links">
+              <a href="https://www.youtube.com/watch?v=jiOzP3fpSqY" target="_blank" rel="noreferrer" class="btn">Watch Demo ↗</a>
+            </div>
+          </div>
+
+          <!-- Right: media -->
+          <div>
+            <div class="media-box">
+              <iframe
+                src="https://www.youtube.com/embed/jiOzP3fpSqY"
+                title="Sneaking Out playthrough"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="media-2col">
+              <div>
+                <div class="media-box">
+                  <img src="/assets/images/movement.png" alt="Locomotion Blueprint" />
+                </div>
+                <p class="media-caption">Locomotion Blueprint: sprint + jump with movement-state checks</p>
+              </div>
+              <div>
+                <div class="media-box">
+                  <img src="/assets/images/throwitem.png" alt="Throw mechanic Blueprint" />
+                </div>
+                <p class="media-caption">Throw mechanic: spawn + physics impulse + inventory update</p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </article>
 
-      <div class="video-wrapper">
-        <iframe src="https://www.youtube.com/embed/jiOzP3fpSqY" title="Sneaking Out Playthrough" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen>
-        </iframe>
-      </div>
-
-      <h3>Role</h3>
-      <p>
-        Gameplay Designer / Developer — player locomotion (sprint/crouch/jump), throw mechanic, and Blueprint gameplay
-        logic.Used Perforce for version control.
-      </p>
-
-      <h3>What I Built</h3>
-      <ul>
-        <li>Implemented sprint, crouch, and jump using Enhanced Input with state gating for stealth pacing</li>
-        <li>Added safety checks to prevent conflicting movement states and edge-case bugs</li>
-        <li>Built throw-to-distract: montage-driven throw, spawn throwable, physics impulse, and inventory decrement
-        </li>
-        <li>Integrated player feedback and control rules to keep interactions responsive and readable</li>
-      </ul>
-
-      <div class="media-grid">
-        <figure class="blueprint-figure">
-          <img src="/assets/images/movement.png" alt="Locomotion Blueprint (sprint and jump)" />
-          <figcaption>Locomotion Blueprint: sprint + jump input logic with movement-state checks.</figcaption>
-        </figure>
-
-        <figure class="blueprint-figure">
-          <img src="/assets/images/crounch.png" alt="Crouch Blueprint" />
-          <figcaption>Crouch Blueprint: gated transitions and safety checks for stable stealth movement.</figcaption>
-        </figure>
-
-        <figure class="blueprint-figure">
-          <img src="/assets/images/throwitem.png" alt="Throw mechanic Blueprint (spawn + impulse + inventory update)" />
-          <figcaption>Throw mechanic Blueprint: spawn + physics impulse + inventory update for distraction gameplay.
-          </figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <!-- ===================== -->
-    <!-- Owl Hunt -->
-    <!-- ===================== -->
-    <section class="card project">
-      <div class="project-head">
-        <div>
-          <h2 class="project-title">Owl Hunt</h2>
-          <p class="project-sub">
-            Playdate game where the crank controls aiming, diving, and returning with prey.
-          </p>
-        </div>
-
-        <div class="project-meta">
-          <span class="pill">Playdate</span>
-          <span class="pill">Lua</span>
-          <span class="pill">Game Feel</span>
-        </div>
-      </div>
-
-      <div class="gif-wrapper">
-        <img src="/assets/images/Owlhunt.gif" alt="Owl Hunt gameplay gif" />
-      </div>
-
-      <h3>Role</h3>
-      <p>Solo developer — gameplay design, tuning, and Lua implementation.</p>
-
-      <h3>Design Goal (True North)</h3>
-      <p class="muted">
-        Deliver a tense, atmospheric hunting experience where the crank embodies the owl’s struggle for survival —
-        aiming, diving, and returning with prey all reinforce effort, weight, and urgency.
-      </p>
-
-      <h3>What I Built</h3>
-      <ul>
-        <li>Crank-driven aiming arc and commit-to-dive control loop designed for short, intense sessions</li>
-        <li>Return phase that requires cranking backward to “fight” prey weight and reach safety</li>
-        <li>Multiple prey behaviors (rats vs rabbits) to vary difficulty and decision-making</li>
-        <li>Invisible dynamic difficulty (prey speed, night length, hearts) to keep tension high without menus</li>
-        <li>Minimal UI + hint system that teaches through feedback rather than text tutorials</li>
-      </ul>
-
-      <div class="row">
-        <a class="btn" href="https://github.com/YijiaLi2003/OwlHunt" target="_blank" rel="noreferrer">
-          View Source on GitHub
-        </a>
-      </div>
-
-    </section>
-    <!-- ===================== -->
-    <!-- Relic Runner -->
-    <!-- ===================== -->
-    <section class="card project">
-      <div class="project-head">
-        <div>
-          <h2 class="project-title">Relic Runner</h2>
-          <p class="project-sub">
-            C++17 command-line game: ASCII dungeon exploration with turn-based combat, inventory, collectibles,
-            and full save/load.
-          </p>
+      <!-- ─────────────────────────────────────────────── -->
+      <!-- 02 · Owl Hunt                                  -->
+      <!-- ─────────────────────────────────────────────── -->
+      <article class="project-item reveal" id="owl-hunt">
+        <p class="project-num label">02</p>
+        <div class="project-top-row">
+          <div>
+            <h2 class="project-title">Owl Hunt</h2>
+            <p class="project-role">Solo Developer &mdash; Playdate Game</p>
+          </div>
+          <div class="project-tags">
+            <span class="tag">Playdate</span>
+            <span class="tag">Lua</span>
+            <span class="tag">Game Feel</span>
+          </div>
         </div>
 
-        <div class="project-meta">
-          <span class="pill">C++17</span>
-          <span class="pill">Command Line</span>
-          <span class="pill">Data Save/Load</span>
+        <div class="project-body">
+          <div>
+            <p class="project-desc">
+              A platform game built for the Playdate handheld console, designed around the device's unique
+              crank input. The player aims using the crank, dives to catch prey, and returns to the nest.
+            </p>
+            <p class="project-goal">
+              Deliver a tense, atmospheric hunting experience where the crank embodies the owl's struggle —
+              aiming, diving, and returning with prey all reinforce effort, weight, and urgency.
+            </p>
+            <div class="project-feats">
+              <span class="feat">Crank-driven aiming arc and commit-to-dive loop for short, intense sessions</span>
+              <span class="feat">Return phase: crank backward to "fight" prey weight and reach safety</span>
+              <span class="feat">Multiple prey behaviors (rats vs. rabbits) to vary difficulty</span>
+              <span class="feat">Invisible dynamic difficulty — prey speed, night length, hearts adapt without menus</span>
+              <span class="feat">Minimal UI + hint system that teaches through feedback, not text</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/YijiaLi2003/OwlHunt" target="_blank" rel="noreferrer" class="btn">Source Code ↗</a>
+            </div>
+          </div>
+
+          <div>
+            <div class="media-box">
+              <img src="/assets/images/Owlhunt.gif" alt="Owl Hunt gameplay" />
+            </div>
+          </div>
         </div>
-      </div>
+      </article>
 
-      <h3>Role</h3>
-      <p>Solo developer — systems design, C++ implementation, save/load, inventory, combat, and unit tests.</p>
-
-      <h3>What I Built</h3>
-      <ul>
-        <li>ASCII dungeon renderer with player, monsters, exit, and ground collectibles</li>
-        <li>Turn-based movement + combat loop (player action → monster turns with simple AI)</li>
-        <li>Inventory built on a custom templated <code>LinkedList&lt;Item&gt;</code> (add/remove/use items)</li>
-        <li>Collectible + drop system: items spawn on the map and monsters drop loot on defeat</li>
-        <li>Full save/load to <code>data/savegame.txt</code> including player, monsters, inventory, and ground items
-        </li>
-        <li>Unit tests runnable via <code>make test</code> and <code>test.sh</code></li>
-      </ul>
-
-      <div class="row">
-        <a class="btn" href="https://github.com/YijiaLi2003/RelicRunner" target="_blank" rel="noreferrer">
-          View Source on GitHub
-        </a>
-      </div>
-    </section>
-
-
-    <!-- ===================== -->
-    <!-- Gravity (WIP) -->
-    <!-- ===================== -->
-    <section class="card project">
-      <div class="project-head">
-        <div>
-          <h2 class="project-title">Gravity (WIP)</h2>
-          <p class="project-sub">
-            Long-term Unreal project exploring gravity-manipulation puzzle mechanics. Early development.
-          </p>
+      <!-- ─────────────────────────────────────────────── -->
+      <!-- 03 · Relic Runner                              -->
+      <!-- ─────────────────────────────────────────────── -->
+      <article class="project-item reveal" id="relic-runner">
+        <p class="project-num label">03</p>
+        <div class="project-top-row">
+          <div>
+            <h2 class="project-title">Relic Runner</h2>
+            <p class="project-role">Solo Developer &mdash; C++ CLI Game</p>
+          </div>
+          <div class="project-tags">
+            <span class="tag">C++17</span>
+            <span class="tag">Command Line</span>
+            <span class="tag">Data Systems</span>
+          </div>
         </div>
 
-        <div class="project-meta">
-          <span class="pill">Unreal Engine</span>
-          <span class="pill">Studio Project</span>
-          <span class="pill">Pitch</span>
+        <div class="project-body single">
+          <div>
+            <p class="project-desc">
+              A command-line dungeon crawler written in C++17. The focus was on building clean, well-structured
+              game systems: ASCII rendering, turn-based combat, inventory management, and persistent save/load.
+            </p>
+            <div class="project-feats">
+              <span class="feat">ASCII tile-based dungeon rendering with player, monsters, exit, and collectibles</span>
+              <span class="feat">Turn-based movement + combat loop with simple monster AI</span>
+              <span class="feat">Inventory built on a custom templated <code>LinkedList&lt;Item&gt;</code></span>
+              <span class="feat">Collectible + drop system: items spawn on map, monsters drop loot on defeat</span>
+              <span class="feat">Full save/load to <code>data/savegame.txt</code> — player, monsters, inventory, ground items</span>
+              <span class="feat">Unit tests via <code>make test</code></span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/YijiaLi2003/RelicRunner" target="_blank" rel="noreferrer" class="btn">Source Code ↗</a>
+            </div>
+          </div>
         </div>
+      </article>
+
+      <!-- ─────────────────────────────────────────────── -->
+      <!-- 04 · Gravity (WIP)                             -->
+      <!-- ─────────────────────────────────────────────── -->
+      <article class="project-item reveal" id="gravity">
+        <p class="project-num label">04</p>
+        <div class="project-top-row">
+          <div>
+            <h2 class="project-title">
+              Gravity
+              <span class="project-title-wip">— WIP</span>
+            </h2>
+            <p class="project-role">Gameplay Designer / Developer &mdash; Studio Team Project</p>
+          </div>
+          <div class="project-tags">
+            <span class="tag">Unreal Engine 5</span>
+            <span class="tag">Team</span>
+            <span class="tag">Long-term</span>
+          </div>
+        </div>
+
+        <div class="project-body single">
+          <div>
+            <p class="project-desc">
+              A long-term studio project exploring gravity-manipulation puzzle mechanics. Currently in the
+              pitch and prototype phase — the most representative artifact right now is the team pitch video.
+            </p>
+            <div class="project-links">
+              <a href="https://youtu.be/v3qzcnEXEbE" target="_blank" rel="noreferrer" class="btn">Watch Pitch (5 min) ↗</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <span>© <span id="y"></span> Yijia Li</span>
+      <div class="footer-links">
+        <a href="mailto:yijiali2003@gmail.com">Email</a>
+        <a href="https://github.com/YijiaLi2003" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/yijiali2003" target="_blank" rel="noreferrer">LinkedIn</a>
       </div>
-
-      <p class="muted">
-        This is in early production, so the most representative artifact right now is our team pitch.
-      </p>
-
-      <div class="row">
-        <a class="btn" href="https://youtu.be/v3qzcnEXEbE" target="_blank" rel="noreferrer">
-          Watch Pitch (5 min)
-        </a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="container footer">
-    <p>© <span id="y"></span> Yijia Li</p>
+    </div>
   </footer>
 
   <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
-</body>
+    document.getElementById('y').textContent = new Date().getFullYear();
 
+    const observer = new IntersectionObserver(
+      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+      { threshold: 0.05 }
+    );
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
 </html>
