@@ -4,237 +4,279 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Projects — Yijia Li</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Gravity (UE5, lead designer), Arcade Tank Fight (GAS), Sneaking Out (stealth), OwlHunt (Playdate)." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Projects — Yijia Li" />
+  <meta property="og:description" content="Gameplay systems, level design and designer tools in Unreal Engine 5." />
+  <meta property="og:url" content="https://yijiali2003.github.io/projects.html" />
+  <meta property="og:image" content="https://yijiali2003.github.io/assets/images/gravity-explosion-poster.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#0c0c0c" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23c2ff4d' stroke-width='2.5'/%3E%3Ccircle cx='16' cy='16' r='9' fill='%23000'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 
   <!-- NAV -->
   <nav class="nav">
-    <a href="/" class="nav-logo">Yijia Li</a>
+    <a href="/" class="nav-logo" data-magnet>Yijia Li</a>
     <div class="nav-links">
-      <a href="/projects.html" class="active">Projects</a>
-      <a href="/about.html">About</a>
-      <a href="/assets/Resume_Yijia.pdf" target="_blank" rel="noreferrer" class="nav-resume">Resume ↗</a>
+      <a href="/projects.html" class="active" data-magnet>Projects</a>
+      <a href="/about.html" data-magnet>About</a>
+      <a href="/assets/Resume_Yijia.pdf" target="_blank" rel="noreferrer" class="nav-resume" data-magnet>Resume ↗</a>
     </div>
   </nav>
 
-  <!-- PAGE HEADER -->
-  <div class="wrap">
-    <header class="projects-top">
-      <p class="label">Work</p>
-      <h1 class="page-heading">Projects<span class="accent">.</span></h1>
-    </header>
-  </div>
-
-  <!-- PROJECT LIST -->
-  <div class="wrap">
-    <div class="project-list">
-
-      <!-- ─────────────────────────────────────────────── -->
-      <!-- 01 · Sneaking Out                              -->
-      <!-- ─────────────────────────────────────────────── -->
-      <article class="project-item reveal" id="sneaking-out">
-        <p class="project-num label">01</p>
-        <div class="project-top-row">
-          <div>
-            <h2 class="project-title">Sneaking Out</h2>
-            <p class="project-role">Gameplay Designer / Developer &mdash; UE5 Student Project</p>
-          </div>
-          <div class="project-tags">
-            <span class="tag">Unreal Engine 5</span>
-            <span class="tag">Blueprint</span>
-            <span class="tag">Perforce</span>
-          </div>
-        </div>
-
-        <div class="project-body">
-          <!-- Left: description -->
-          <div>
-            <p class="project-desc">
-              A stealth prototype built in Unreal Engine 5 as part of a university team project.
-              I designed and implemented the player's locomotion system and the core throw-to-distract mechanic.
-            </p>
-            <div class="project-feats">
-              <span class="feat">Responsive locomotion: sprint, crouch, and jump via Enhanced Input with state gating</span>
-              <span class="feat">Safety checks to prevent conflicting movement states and edge-case bugs</span>
-              <span class="feat">Throw-to-distract: montage-driven throw, spawned throwable, physics impulse, inventory decrement</span>
-              <span class="feat">Player feedback and control rules to keep interactions readable</span>
-            </div>
-            <div class="project-links">
-              <a href="https://www.youtube.com/watch?v=jiOzP3fpSqY" target="_blank" rel="noreferrer" class="btn">Watch Demo ↗</a>
-            </div>
-          </div>
-
-          <!-- Right: media -->
-          <div>
-            <div class="media-box">
-              <iframe
-                src="https://www.youtube.com/embed/jiOzP3fpSqY"
-                title="Sneaking Out playthrough"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-              </iframe>
-            </div>
-            <div class="media-2col">
-              <div>
-                <div class="media-box">
-                  <img src="/assets/images/movement.png" alt="Locomotion Blueprint" />
-                </div>
-                <p class="media-caption">Locomotion Blueprint: sprint + jump with movement-state checks</p>
-              </div>
-              <div>
-                <div class="media-box">
-                  <img src="/assets/images/throwitem.png" alt="Throw mechanic Blueprint" />
-                </div>
-                <p class="media-caption">Throw mechanic: spawn + physics impulse + inventory update</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- ─────────────────────────────────────────────── -->
-      <!-- 02 · Owl Hunt                                  -->
-      <!-- ─────────────────────────────────────────────── -->
-      <article class="project-item reveal" id="owl-hunt">
-        <p class="project-num label">02</p>
-        <div class="project-top-row">
-          <div>
-            <h2 class="project-title">Owl Hunt</h2>
-            <p class="project-role">Solo Developer &mdash; Playdate Game</p>
-          </div>
-          <div class="project-tags">
-            <span class="tag">Playdate</span>
-            <span class="tag">Lua</span>
-            <span class="tag">Game Feel</span>
-          </div>
-        </div>
-
-        <div class="project-body">
-          <div>
-            <p class="project-desc">
-              A platform game built for the Playdate handheld console, designed around the device's unique
-              crank input. The player aims using the crank, dives to catch prey, and returns to the nest.
-            </p>
-            <p class="project-goal">
-              Deliver a tense, atmospheric hunting experience where the crank embodies the owl's struggle —
-              aiming, diving, and returning with prey all reinforce effort, weight, and urgency.
-            </p>
-            <div class="project-feats">
-              <span class="feat">Crank-driven aiming arc and commit-to-dive loop for short, intense sessions</span>
-              <span class="feat">Return phase: crank backward to "fight" prey weight and reach safety</span>
-              <span class="feat">Multiple prey behaviors (rats vs. rabbits) to vary difficulty</span>
-              <span class="feat">Invisible dynamic difficulty — prey speed, night length, hearts adapt without menus</span>
-              <span class="feat">Minimal UI + hint system that teaches through feedback, not text</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/YijiaLi2003/OwlHunt" target="_blank" rel="noreferrer" class="btn">Source Code ↗</a>
-            </div>
-          </div>
-
-          <div>
-            <div class="media-box">
-              <img src="/assets/images/Owlhunt.gif" alt="Owl Hunt gameplay" />
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- ─────────────────────────────────────────────── -->
-      <!-- 03 · Relic Runner                              -->
-      <!-- ─────────────────────────────────────────────── -->
-      <article class="project-item reveal" id="relic-runner">
-        <p class="project-num label">03</p>
-        <div class="project-top-row">
-          <div>
-            <h2 class="project-title">Relic Runner</h2>
-            <p class="project-role">Solo Developer &mdash; C++ CLI Game</p>
-          </div>
-          <div class="project-tags">
-            <span class="tag">C++17</span>
-            <span class="tag">Command Line</span>
-            <span class="tag">Data Systems</span>
-          </div>
-        </div>
-
-        <div class="project-body single">
-          <div>
-            <p class="project-desc">
-              A command-line dungeon crawler written in C++17. The focus was on building clean, well-structured
-              game systems: ASCII rendering, turn-based combat, inventory management, and persistent save/load.
-            </p>
-            <div class="project-feats">
-              <span class="feat">ASCII tile-based dungeon rendering with player, monsters, exit, and collectibles</span>
-              <span class="feat">Turn-based movement + combat loop with simple monster AI</span>
-              <span class="feat">Inventory built on a custom templated <code>LinkedList&lt;Item&gt;</code></span>
-              <span class="feat">Collectible + drop system: items spawn on map, monsters drop loot on defeat</span>
-              <span class="feat">Full save/load to <code>data/savegame.txt</code> — player, monsters, inventory, ground items</span>
-              <span class="feat">Unit tests via <code>make test</code></span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/YijiaLi2003/RelicRunner" target="_blank" rel="noreferrer" class="btn">Source Code ↗</a>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- ─────────────────────────────────────────────── -->
-      <!-- 04 · Gravity (WIP)                             -->
-      <!-- ─────────────────────────────────────────────── -->
-      <article class="project-item reveal" id="gravity">
-        <p class="project-num label">04</p>
-        <div class="project-top-row">
-          <div>
-            <h2 class="project-title">
-              Gravity
-              <span class="project-title-wip">— WIP</span>
-            </h2>
-            <p class="project-role">Gameplay Designer / Developer &mdash; Studio Team Project</p>
-          </div>
-          <div class="project-tags">
-            <span class="tag">Unreal Engine 5</span>
-            <span class="tag">Team</span>
-            <span class="tag">Long-term</span>
-          </div>
-        </div>
-
-        <div class="project-body single">
-          <div>
-            <p class="project-desc">
-              A long-term studio project exploring gravity-manipulation puzzle mechanics. Currently in the
-              pitch and prototype phase — the most representative artifact right now is the team pitch video.
-            </p>
-            <div class="project-links">
-              <a href="https://youtu.be/v3qzcnEXEbE" target="_blank" rel="noreferrer" class="btn">Watch Pitch (5 min) ↗</a>
-            </div>
-          </div>
-        </div>
-      </article>
-
+  <main>
+    <div class="wrap">
+      <header class="projects-top">
+        <p class="label">Work</p>
+        <h1 class="page-heading">Projects<span class="accent">.</span></h1>
+        <nav class="project-jump" aria-label="Jump to project">
+          <a href="#gravity" class="btn" data-magnet>Gravity</a>
+          <a href="#sneaking-out" class="btn" data-magnet>Sneaking Out</a>
+          <a href="#arcade-tank-fight" class="btn" data-magnet>Arcade Tank Fight</a>
+          <a href="#owl-hunt" class="btn" data-magnet>OwlHunt</a>
+        </nav>
+      </header>
     </div>
-  </div>
+
+    <div class="wrap">
+      <div class="project-list">
+
+        <!-- 01 · Gravity -->
+        <article class="project-item" id="gravity">
+          <p class="project-num label">01 · Featured</p>
+          <div class="project-top-row">
+            <div>
+              <h2 class="project-title">Gravity<span class="accent">.</span></h2>
+              <p class="project-pitch">3D puzzle platformer on a failing space station, built around a Gravity Glove.</p>
+            </div>
+            <div class="project-tags">
+              <span class="tag">UE 5.6</span>
+              <span class="tag">C++</span>
+              <span class="tag">Blueprint</span>
+              <span class="tag">Chaos</span>
+            </div>
+          </div>
+
+          <dl class="facts">
+            <div class="fact"><dt>Role</dt><dd>Lead Designer, Programmer, Producer</dd></div>
+            <div class="fact"><dt>Team</dt><dd>18</dd></div>
+            <div class="fact"><dt>Context</dt><dd>Duke graduate capstone</dd></div>
+            <div class="fact"><dt>Timeline</dt><dd>2025 – now</dd></div>
+          </dl>
+
+          <div class="media-box">
+            <video controls playsinline preload="none"
+                   poster="/assets/images/gravity-walkthrough-poster.jpg"
+                   aria-label="Gravity — Level 1-6 walkthrough">
+              <source src="/assets/video/gravity-lv6-walkthrough.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <p class="media-caption">Level 1-6 walkthrough, the Chapter I finale.</p>
+
+          <div class="project-links">
+            <a href="https://drive.google.com/file/d/1uyLjudF6LpVGVTGRcKFLg4dr9XW-kAtA/view" target="_blank" rel="noreferrer" class="btn btn-primary" data-magnet>Download Demo ↗</a>          </div>
+
+          <div class="highlights">
+            <section class="hl reveal">
+              <p class="hl-k">Level design</p>
+              <h3>Chapter I in six beats</h3>
+              <p>Teach → Test → Twist, building to a timed low-gravity escape.</p>
+            </section>
+            <section class="hl reveal reveal-d1">
+              <p class="hl-k">Mechanic</p>
+              <h3>Gravity Glove</h3>
+              <p>Physics pull tuned into a precise, predictable traversal tool.</p>
+            </section>
+            <section class="hl reveal reveal-d2">
+              <p class="hl-k">Systems</p>
+              <h3>Seamless airlocks</h3>
+              <p>State-driven doors and teleport handoff hide level streaming.</p>
+            </section>
+            <section class="hl reveal reveal-d3">
+              <p class="hl-k">Tools</p>
+              <h3>Designer-facing editor tools</h3>
+              <p>Trajectory authoring, baking and previews, with no code changes.</p>
+            </section>
+          </div>
+
+          <div class="split reveal">
+            <div class="media-box">
+              <video muted loop playsinline autoplay preload="none"
+                     poster="/assets/images/gravity-explosion-poster.jpg"
+                     aria-label="Gravity — destruction finale">
+                <source src="/assets/video/gravity-explosion.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div>
+              <p class="hl-k">Set piece</p>
+              <h3 class="split-title">Deterministic destruction</h3>
+              <p class="split-text">Chaos fracture, moving geometry and player control in sync, so the finale lands the same way every time.</p>
+              <p class="hl-k split-k2">Production</p>
+              <p class="split-text">Led roadmaps, sprints and Jira for 18 people across two chapter teams.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- 02 · Sneaking Out -->
+        <article class="project-item reveal" id="sneaking-out">
+          <p class="project-num label">02</p>
+          <div class="project-top-row">
+            <div>
+              <h2 class="project-title">Sneaking Out</h2>
+              <p class="project-pitch">Slip out of the house at night without getting caught.</p>
+            </div>
+            <div class="project-tags">
+              <span class="tag">UE5</span>
+              <span class="tag">Blueprint</span>
+              <span class="tag">Perforce</span>
+            </div>
+          </div>
+
+          <dl class="facts">
+            <div class="fact"><dt>Role</dt><dd>Game Developer</dd></div>
+            <div class="fact"><dt>Team</dt><dd>5</dd></div>
+            <div class="fact"><dt>Context</dt><dd>Duke graduate course</dd></div>
+            <div class="fact"><dt>Timeline</dt><dd>Aug – Dec 2025</dd></div>
+          </dl>
+
+          <div class="project-body">
+            <div>
+              <div class="project-feats">
+                <span class="feat"><span><strong>Locomotion:</strong> sprint, crouch and jump, gated by a state machine.</span></span>
+                <span class="feat"><span><strong>Throw-to-distract:</strong> predicted arc, montage, physics impulse.</span></span>
+              </div>
+            </div>
+            <!-- Click-to-load facade: keeps the custom cursor until the video starts -->
+            <div class="media-box yt" data-yt="jiOzP3fpSqY" data-yt-title="Sneaking Out gameplay">
+              <button type="button" class="yt-play" aria-label="Play Sneaking Out gameplay video">
+                <img src="/assets/images/sneakingout-thumb.jpg" alt="" loading="lazy" width="1280" height="600" />
+                <span class="yt-icon" aria-hidden="true"></span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 03 · Arcade Tank Fight -->
+        <article class="project-item reveal" id="arcade-tank-fight">
+          <p class="project-num label">03</p>
+          <div class="project-top-row">
+            <div>
+              <h2 class="project-title">Arcade Tank Fight</h2>
+              <p class="project-pitch">Two tanks, one arena. Three bullet types, five powerups.</p>
+            </div>
+            <div class="project-tags">
+              <span class="tag">UE 5.6</span>
+              <span class="tag">C++</span>
+              <span class="tag">GAS</span>
+              <span class="tag">UMG</span>
+            </div>
+          </div>
+
+          <dl class="facts">
+            <div class="fact"><dt>Role</dt><dd>Designer, Programmer</dd></div>
+            <div class="fact"><dt>Team</dt><dd>Solo</dd></div>
+            <div class="fact"><dt>Mode</dt><dd>Local 2-player</dd></div>
+            <div class="fact"><dt>Timeline</dt><dd>Feb – May 2026</dd></div>
+          </dl>
+
+          <div class="project-body">
+            <div>
+              <div class="project-feats">
+                <span class="feat"><span><strong>GAS combat:</strong> firing rules, speed boosts and powerup states.</span></span>
+                <span class="feat"><span><strong>Projectile pool:</strong> Classic, Guided and Bouncing shots share one lifecycle.</span></span>
+                <span class="feat"><span><strong>Clean outcomes:</strong> a hit is ignored, damages or destroys, so scoring stays separate.</span></span>
+                <span class="feat"><span><strong>UMG flow:</strong> menus, HUD and pause with focus for two controllers.</span></span>
+              </div>
+              <div class="project-links">
+                <a href="https://yijiali.itch.io/arcade-tank-fight" target="_blank" rel="noreferrer" class="btn btn-primary" data-magnet>Play on itch.io ↗</a>
+              </div>
+            </div>
+            <div>
+              <div class="media-box">
+                <video controls playsinline preload="none"
+                       poster="/assets/images/tankfight-poster.jpg"
+                       aria-label="Arcade Tank Fight playthrough">
+                  <source src="/assets/video/tankfight-playthrough.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="media-2col">
+                <div class="media-box">
+                  <img src="/assets/images/tank-bullets.jpg" alt="Classic, Guided and Bouncing projectiles" loading="lazy" width="1280" height="720" />
+                </div>
+                <div class="media-box">
+                  <img src="/assets/images/tank-setup.jpg" alt="Match setup screen" loading="lazy" width="1280" height="720" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 04 · OwlHunt -->
+        <article class="project-item reveal" id="owl-hunt">
+          <p class="project-num label">04</p>
+          <div class="project-top-row">
+            <div>
+              <h2 class="project-title">OwlHunt</h2>
+              <p class="project-pitch">A Playdate hunting game played entirely with the crank.</p>
+            </div>
+            <div class="project-tags">
+              <span class="tag">Playdate</span>
+              <span class="tag">Lua</span>
+            </div>
+          </div>
+
+          <dl class="facts">
+            <div class="fact"><dt>Role</dt><dd>Designer, Programmer</dd></div>
+            <div class="fact"><dt>Team</dt><dd>Solo</dd></div>
+            <div class="fact"><dt>Platform</dt><dd>Playdate</dd></div>
+            <div class="fact"><dt>Timeline</dt><dd>Aug – Dec 2025</dd></div>
+          </dl>
+
+          <div class="project-body">
+            <div>
+              <div class="project-feats">
+                <span class="feat"><span><strong>One input:</strong> crank to aim, dive, then wind back to haul prey home.</span></span>
+                <span class="feat"><span><strong>No tutorial text:</strong> trajectories, hints and sound teach the game.</span></span>
+                <span class="feat"><span><strong>Dynamic difficulty:</strong> prey speed and night length adapt as you play.</span></span>
+              </div>
+              <div class="project-links">
+                <a href="https://yijiali.itch.io/owlhunt" target="_blank" rel="noreferrer" class="btn btn-primary" data-magnet>Play on itch.io ↗</a>
+                <a href="https://github.com/YijiaLi2003/OwlHunt" target="_blank" rel="noreferrer" class="btn" data-magnet>Source ↗</a>
+              </div>
+            </div>
+            <div class="media-box pixel">
+              <video autoplay muted loop playsinline preload="none"
+                     poster="/assets/images/owlhunt-poster.png"
+                     aria-label="OwlHunt gameplay">
+                <source src="/assets/video/owlhunt.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </main>
 
   <!-- FOOTER -->
   <footer>
     <div class="footer-inner">
-      <span>© <span id="y"></span> Yijia Li</span>
+      <span>© <span data-year></span> Yijia Li</span>
       <div class="footer-links">
-        <a href="mailto:yijiali2003@gmail.com">Email</a>
-        <a href="https://github.com/YijiaLi2003" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/in/yijiali2003" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a data-magnet href="mailto:yijiali2003@gmail.com">Email</a>
+        <a data-magnet href="https://github.com/YijiaLi2003" target="_blank" rel="noreferrer">GitHub</a>
+        <a data-magnet href="https://www.linkedin.com/in/yijiali2003" target="_blank" rel="noreferrer">LinkedIn</a>
       </div>
     </div>
   </footer>
 
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-
-    const observer = new IntersectionObserver(
-      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
-      { threshold: 0.05 }
-    );
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-  </script>
-
+  <script src="/main.js" defer></script>
 </body>
 </html>

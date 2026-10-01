@@ -3,140 +3,176 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Yijia (Jya) Li — Gameplay Designer / Developer</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Yijia (Jya) Li — Game Designer &amp; Gameplay Programmer</title>
+  <meta name="description" content="Yijia (Jya) Li — game designer and gameplay programmer. Unreal Engine 5, C++, Blueprint. Lead designer on Gravity, a 3D gravity-puzzle platformer." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Yijia (Jya) Li — Game Designer &amp; Gameplay Programmer" />
+  <meta property="og:description" content="Gameplay systems, level design and designer tools in Unreal Engine 5." />
+  <meta property="og:url" content="https://yijiali2003.github.io/" />
+  <meta property="og:image" content="https://yijiali2003.github.io/assets/images/gravity-explosion-poster.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#0c0c0c" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23c2ff4d' stroke-width='2.5'/%3E%3Ccircle cx='16' cy='16' r='9' fill='%23000'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 
   <!-- NAV -->
   <nav class="nav">
-    <a href="/" class="nav-logo">Yijia Li</a>
+    <a href="/" class="nav-logo" data-magnet>Yijia Li</a>
     <div class="nav-links">
-      <a href="/projects.html">Projects</a>
-      <a href="/about.html">About</a>
-      <a href="/assets/Resume_Yijia.pdf" target="_blank" rel="noreferrer" class="nav-resume">Resume ↗</a>
+      <a href="/projects.html" data-magnet>Projects</a>
+      <a href="/about.html" data-magnet>About</a>
+      <a href="/assets/Resume_Yijia.pdf" target="_blank" rel="noreferrer" class="nav-resume" data-magnet>Resume ↗</a>
     </div>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-inner">
-      <div class="hero-text">
-        <p class="label hero-label">Gameplay Designer &amp; Developer</p>
-        <h1 class="hero-name">
-          Yijia Li<span class="accent">.</span>
-        </h1>
-        <p class="hero-sub">
-          Building gameplay systems and level experiences in Unreal Engine.
-          UE5 &nbsp;·&nbsp; C++ &nbsp;·&nbsp; Blueprint &nbsp;·&nbsp; Lua
-        </p>
-        <div class="hero-cta">
-          <a href="/projects.html" class="btn btn-primary">View Work →</a>
-          <a href="https://github.com/YijiaLi2003" target="_blank" rel="noreferrer" class="btn">GitHub ↗</a>
-          <a href="https://www.linkedin.com/in/yijiali2003" target="_blank" rel="noreferrer" class="btn">LinkedIn ↗</a>
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <p class="label hero-label">Game Designer &amp; Gameplay Programmer</p>
+          <h1 class="hero-name">
+            Yijia Li<span class="accent">.</span>
+          </h1>
+          <p class="hero-sub">
+            I design mechanics and build the systems behind them.
+            Lead designer on <a href="/projects.html#gravity" class="text-link" data-magnet>Gravity</a>.
+          </p>
+          <p class="hero-stack">UE5 &nbsp;·&nbsp; C++ &nbsp;·&nbsp; Blueprint &nbsp;·&nbsp; GAS</p>
+          <div class="hero-cta">
+            <a href="/projects.html" class="btn btn-primary" data-magnet>View Work →</a>
+            <a href="https://github.com/YijiaLi2003" target="_blank" rel="noreferrer" class="btn" data-magnet>GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/yijiali2003" target="_blank" rel="noreferrer" class="btn" data-magnet>LinkedIn ↗</a>
+          </div>
+        </div>
+
+        <a href="/projects.html#gravity" class="hero-feature">
+          <div class="hero-media">
+            <video autoplay muted loop playsinline preload="auto"
+                   poster="/assets/images/gravity-explosion-poster.jpg"
+                   aria-label="Gravity — Chapter I finale: the corridor fractures around the player">
+              <source src="/assets/video/gravity-explosion.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <p class="hero-caption">
+            <span><strong>Gravity</strong> — Chapter I finale</span>
+            <span class="arrow">↗</span>
+          </p>
+        </a>
+      </div>
+    </section>
+
+    <!-- SELECTED WORK -->
+    <section class="work-section">
+      <div class="wrap">
+        <div class="work-header reveal">
+          <h2 class="section-title">Selected Work</h2>
+          <span class="work-count" id="work-count"></span>
+        </div>
+
+        <div class="work-grid">
+
+          <!-- Gravity -->
+          <a href="/projects.html#gravity" class="work-card featured reveal">
+            <span class="work-card-arrow">↗</span>
+            <div class="work-card-thumb">
+              <video muted loop playsinline preload="none" data-hover-play
+                     poster="/assets/images/gravity-walkthrough-poster.jpg"
+                     aria-label="Gravity — Level 1-6 walkthrough preview">
+                <source src="/assets/video/gravity-explosion.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <p class="work-card-meta">Lead Designer · Team of 18 · 2025 – now</p>
+            <p class="work-card-title">Gravity</p>
+            <p class="work-card-desc">3D gravity-puzzle platformer. Level design, systems, tools and production.</p>
+            <div class="work-card-tags">
+              <span class="tag">UE5</span>
+              <span class="tag">C++</span>
+              <span class="tag">Level Design</span>
+            </div>
+          </a>
+
+          <!-- Sneaking Out -->
+          <a href="/projects.html#sneaking-out" class="work-card reveal">
+            <span class="work-card-arrow">↗</span>
+            <div class="work-card-thumb">
+              <img src="/assets/images/sneakingout-thumb.jpg" alt="Sneaking Out — gameplay" loading="lazy" width="1280" height="600" />
+            </div>
+            <p class="work-card-meta">Team of 5 · 2025</p>
+            <p class="work-card-title">Sneaking Out</p>
+            <p class="work-card-desc">Stealth game. Locomotion and throw-to-distract.</p>
+            <div class="work-card-tags">
+              <span class="tag">UE5</span>
+              <span class="tag">Blueprint</span>
+            </div>
+          </a>
+
+          <!-- Arcade Tank Fight -->
+          <a href="/projects.html#arcade-tank-fight" class="work-card reveal reveal-d1">
+            <span class="work-card-arrow">↗</span>
+            <div class="work-card-thumb">
+              <video muted loop playsinline preload="none" data-hover-play
+                     poster="/assets/images/tankfight-poster.jpg"
+                     aria-label="Arcade Tank Fight — gameplay preview">
+                <source src="/assets/video/tankfight-playthrough.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <p class="work-card-meta">Solo · 2026</p>
+            <p class="work-card-title">Arcade Tank Fight</p>
+            <p class="work-card-desc">Local two-player arena shooter built on GAS.</p>
+            <div class="work-card-tags">
+              <span class="tag">UE5</span>
+              <span class="tag">C++</span>
+              <span class="tag">GAS</span>
+            </div>
+          </a>
+
+          <!-- OwlHunt -->
+          <a href="/projects.html#owl-hunt" class="work-card reveal reveal-d1">
+            <span class="work-card-arrow">↗</span>
+            <div class="work-card-thumb pixel">
+              <video muted loop playsinline preload="none" data-hover-play
+                     poster="/assets/images/owlhunt-poster.png"
+                     aria-label="OwlHunt — gameplay preview">
+                <source src="/assets/video/owlhunt.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <p class="work-card-meta">Solo · 2025</p>
+            <p class="work-card-title">OwlHunt</p>
+            <p class="work-card-desc">Playdate game driven entirely by the crank.</p>
+            <div class="work-card-tags">
+              <span class="tag">Playdate</span>
+              <span class="tag">Lua</span>
+            </div>
+          </a>
+
         </div>
       </div>
-      <div class="hero-media">
-        <img src="/assets/images/Owlhunt.gif" alt="Owl Hunt — gameplay preview" />
-      </div>
-    </div>
-  </section>
-
-  <!-- SELECTED WORK -->
-  <section class="work-section">
-    <div class="wrap">
-      <div class="work-header reveal">
-        <span class="section-title">Selected Work</span>
-        <span class="work-count">04 projects</span>
-      </div>
-
-      <div class="work-grid">
-
-        <!-- Sneaking Out -->
-        <a href="/projects.html#sneaking-out" class="work-card reveal">
-          <span class="work-card-arrow">↗</span>
-          <div class="work-card-thumb">
-            <img src="/assets/images/movement.png" alt="Sneaking Out — Blueprint screenshot" />
-          </div>
-          <div class="work-card-tags">
-            <span class="tag">UE5</span>
-            <span class="tag">Blueprint</span>
-            <span class="tag">Stealth</span>
-          </div>
-          <p class="work-card-title">Sneaking Out</p>
-          <p class="work-card-desc">Stealth prototype with locomotion system and throw-to-distract mechanic.</p>
-        </a>
-
-        <!-- Owl Hunt -->
-        <a href="/projects.html#owl-hunt" class="work-card reveal reveal-d1">
-          <span class="work-card-arrow">↗</span>
-          <div class="work-card-thumb">
-            <img src="/assets/images/Owlhunt.gif" alt="Owl Hunt — gameplay" />
-          </div>
-          <div class="work-card-tags">
-            <span class="tag">Playdate</span>
-            <span class="tag">Lua</span>
-            <span class="tag">Solo</span>
-          </div>
-          <p class="work-card-title">Owl Hunt</p>
-          <p class="work-card-desc">Crank-controlled platform game for the Playdate handheld console.</p>
-        </a>
-
-        <!-- Relic Runner -->
-        <a href="/projects.html#relic-runner" class="work-card reveal reveal-d2">
-          <span class="work-card-arrow">↗</span>
-          <div class="work-card-thumb empty">
-            <span>C++17</span>
-          </div>
-          <div class="work-card-tags">
-            <span class="tag">C++17</span>
-            <span class="tag">CLI</span>
-            <span class="tag">Solo</span>
-          </div>
-          <p class="work-card-title">Relic Runner</p>
-          <p class="work-card-desc">Command-line dungeon crawler with ASCII rendering, combat, and save/load.</p>
-        </a>
-
-        <!-- Gravity -->
-        <a href="/projects.html#gravity" class="work-card reveal reveal-d3">
-          <span class="work-card-arrow">↗</span>
-          <div class="work-card-thumb empty">
-            <span>WIP</span>
-          </div>
-          <div class="work-card-tags">
-            <span class="tag">UE5</span>
-            <span class="tag">Team</span>
-            <span class="tag">WIP</span>
-          </div>
-          <p class="work-card-title">Gravity</p>
-          <p class="work-card-desc">Long-form studio project — gravity manipulation puzzle mechanics. Early stage.</p>
-        </a>
-
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- FOOTER -->
   <footer>
     <div class="footer-inner">
-      <span>© <span id="y"></span> Yijia Li</span>
+      <span>© <span data-year></span> Yijia Li</span>
       <div class="footer-links">
-        <a href="mailto:yijiali2003@gmail.com">Email</a>
-        <a href="https://github.com/YijiaLi2003" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/in/yijiali2003" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a data-magnet href="mailto:yijiali2003@gmail.com">Email</a>
+        <a data-magnet href="https://github.com/YijiaLi2003" target="_blank" rel="noreferrer">GitHub</a>
+        <a data-magnet href="https://www.linkedin.com/in/yijiali2003" target="_blank" rel="noreferrer">LinkedIn</a>
       </div>
     </div>
   </footer>
 
   <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-
-    const observer = new IntersectionObserver(
-      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
-      { threshold: 0.07 }
-    );
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    const n = document.querySelectorAll('.work-card').length;
+    document.getElementById('work-count').textContent = String(n).padStart(2, '0') + ' projects';
   </script>
-
+  <script src="/main.js" defer></script>
 </body>
 </html>
